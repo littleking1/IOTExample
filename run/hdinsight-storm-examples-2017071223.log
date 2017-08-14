@@ -1,0 +1,128 @@
+﻿2017-07-12T23:20:26.4331799+08:00 [INFO] [run.ps1(ln:29)] - Phase 1 - Prepare - Start - Preparing project configuration for C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample.
+2017-07-12T23:20:26.5692960+08:00 [INFO] [CreateRunConfig.ps1(ln:33)] - Step 0: Creating Run Configuration
+2017-07-12T23:20:26.6943101+08:00 [INFO] [GenerateRandomConfig.ps1(ln:87)] - Generating run configurations at C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-12T23:20:26.7033141+08:00 [INFO] [GenerateRandomConfig.ps1(ln:96)] - An existing run configuration was found at C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties, just updating newer entries.
+2017-07-12T23:20:26.7423072+08:00 [INFO] [ReplaceStringInFile.ps1(ln:33)] - Replacing configurations in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-12T23:20:26.7793256+08:00 [INFO] [CreateRunConfig.ps1(ln:47)] - Merging Configurations with passed in values
+2017-07-12T23:20:26.7873221+08:00 [INFO] [CreateRunConfig.ps1(ln:53)] - Updating Configurations with passed in values
+2017-07-12T23:20:26.7963262+08:00 [INFO] [ReplaceStringInFile.ps1(ln:33)] - Replacing configurations in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-12T23:20:26.8293230+08:00 [INFO] [ReadConfig.ps1(ln:26)] - Reading configurations from C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-12T23:20:26.8753375+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = AZURE_LOCATION, Value = east asia
+2017-07-12T23:20:26.8803360+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = AZURE_RESOURCE_GROUP, Value = iot-group-201707120034
+2017-07-12T23:20:26.8853378+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = AZURE_SUBSCRIPTION_ID, Value = ec27bf0e-5e9f-49de-a202-d79128bfd111
+2017-07-12T23:20:26.8903382+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = AZURE_SUBSCRIPTION_NAME, Value = Microsoft Azure Internal Consumption
+2017-07-12T23:20:26.8953404+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = AZURE_TENANT_ID, Value = 72f988bf-86f1-41af-91ab-2d7cd011db47
+2017-07-12T23:20:26.9013396+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = DOCUMENTDB, Value = true
+2017-07-12T23:20:26.9073391+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = DOCUMENTDB_ACCOUNT, Value = iot201707120034
+2017-07-12T23:20:26.9123399+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = DOCUMENTDB_COLLECTION, Value = iot201707120034
+2017-07-12T23:20:26.9213399+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = DOCUMENTDB_DATABASE, Value = iot201707120034
+2017-07-12T23:20:26.9273413+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = DOCUMENTDB_HOST, Value = https://iot201707120034.documents.azure.com:443/
+2017-07-12T23:20:26.9343397+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = EVENTHUBS, Value = true
+2017-07-12T23:20:26.9433408+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = EVENTHUBS_ENTITY_PATH, Value = iot201707120034
+2017-07-12T23:20:26.9513421+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = EVENTHUBS_FQDN_SUFFIX, Value = servicebus.windows.net
+2017-07-12T23:20:26.9583459+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = EVENTHUBS_NAMESPACE, Value = iot201707120034
+2017-07-12T23:20:26.9683459+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = EVENTHUBS_PARTITION_COUNT, Value = 2
+2017-07-12T23:20:26.9753636+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = EVENTHUBS_USERNAME, Value = root
+2017-07-12T23:20:26.9843612+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = HBASE, Value = {HBASE}
+2017-07-12T23:20:26.9893604+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = HBASE_CLUSTER_NAME, Value = hbaseiot201707120034
+2017-07-12T23:20:26.9953618+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = HBASE_CLUSTER_OS_TYPE, Value = Windows
+2017-07-12T23:20:27.0043611+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = HBASE_CLUSTER_SIZE, Value = 2
+2017-07-12T23:20:27.0123653+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = HBASE_CLUSTER_URL, Value = {HBASE_CLUSTER_URL}
+2017-07-12T23:20:27.0173664+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = HBASE_CLUSTER_USERNAME, Value = admin
+2017-07-12T23:20:27.0223693+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = KAFKA, Value = {KAFKA}
+2017-07-12T23:20:27.0283623+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = KAFKA_CLUSTER_NAME, Value = kafkaiot201707120034
+2017-07-12T23:20:27.0628656+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = KAFKA_CLUSTER_OS_TYPE, Value = Windows
+2017-07-12T23:20:27.0733761+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = KAFKA_CLUSTER_SIZE, Value = 2
+2017-07-12T23:20:27.0823743+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = KAFKA_CLUSTER_URL, Value = {KAFKA_CLUSTER_URL}
+2017-07-12T23:20:27.0933731+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = KAFKA_CLUSTER_USERNAME, Value = admin
+2017-07-12T23:20:27.1263711+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = SQLAZURE, Value = {SQLAZURE}
+2017-07-12T23:20:27.1333705+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = SQLAZURE_DB_NAME, Value = iot201707120034
+2017-07-12T23:20:27.1373732+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = SQLAZURE_SERVER_NAME, Value = iot201707120034
+2017-07-12T23:20:27.1423710+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = SQLAZURE_USER, Value = sqladmin
+2017-07-12T23:20:27.1483716+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = STORM_CLUSTER_NAME, Value = stormiot201707120034
+2017-07-12T23:20:27.1548824+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = STORM_CLUSTER_OS_TYPE, Value = Windows
+2017-07-12T23:20:27.1598803+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = STORM_CLUSTER_SIZE, Value = 2
+2017-07-12T23:20:27.1663783+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = STORM_CLUSTER_URL, Value = {STORM_CLUSTER_URL}
+2017-07-12T23:20:27.1703904+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = STORM_CLUSTER_USERNAME, Value = admin
+2017-07-12T23:20:27.1753911+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = SUBNET_NAME, Value = iot201707120034
+2017-07-12T23:20:27.1793905+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = VNET, Value = {VNET}
+2017-07-12T23:20:27.1863929+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = VNET_ID, Value = {VNET_ID}
+2017-07-12T23:20:27.1913914+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = VNET_NAME, Value = iot201707120034
+2017-07-12T23:20:27.1973902+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = VNET_VERSION, Value = Classic
+2017-07-12T23:20:27.2103955+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = WASB_ACCOUNT_NAME, Value = iot201707120034
+2017-07-12T23:20:27.2223986+08:00 [INFO] [CreateRunConfig.ps1(ln:57)] - Key = WASB_CONTAINER, Value = iot201707120034
+2017-07-12T23:20:27.4085898+08:00 [INFO] [ReadConfig.ps1(ln:26)] - Reading configurations from C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-12T23:21:32.8283567+08:00 [INFO] [CreateAzureResources.ps1(ln:68)] - Using Azure RM Account: 
+2017-07-12T23:21:45.4447002+08:00 [INFO] [CreateAzureResources.ps1(ln:74)] - Available Subscription Names:
+
+Name     : Microsoft Azure Internal Consumption
+Id       : ec27bf0e-5e9f-49de-a202-d79128bfd111
+TenantId : 72f988bf-86f1-41af-91ab-2d7cd011db47
+State    : Enabled
+
+
+
+
+2017-07-12T23:21:52.3651258+08:00 [INFO] [ReplaceStringInFile.ps1(ln:33)] - Replacing configurations in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-12T23:21:55.8933712+08:00 [INFO] [ReplaceStringInFile.ps1(ln:33)] - Replacing configurations in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-12T23:21:56.5088537+08:00 [INFO] [ReplaceStringInFile.ps1(ln:33)] - Replacing configurations in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-12T23:21:56.5259162+08:00 [INFO] [ReplaceStringInFile.ps1(ln:33)] - Replacing configurations in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-12T23:21:56.7322423+08:00 [INFO] [ReplaceStringInFile.ps1(ln:33)] - Replacing configurations in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-12T23:21:56.7461924+08:00 [INFO] [ReadConfig.ps1(ln:26)] - Reading configurations from C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-12T23:21:56.7551965+08:00 [INFO] [CreateAzureResources.ps1(ln:127)] - Current run configuration:
+2017-07-12T23:21:56.7731904+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = AZURE_LOCATION, Value = east asia
+2017-07-12T23:21:56.7811906+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = AZURE_RESOURCE_GROUP, Value = iot-group-201707120034
+2017-07-12T23:21:56.7882086+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = AZURE_SUBSCRIPTION_ID, Value = ec27bf0e-5e9f-49de-a202-d79128bfd111
+2017-07-12T23:21:56.7937082+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = AZURE_SUBSCRIPTION_NAME, Value = Microsoft Azure Internal Consumption
+2017-07-12T23:21:56.8012212+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = AZURE_TENANT_ID, Value = 72f988bf-86f1-41af-91ab-2d7cd011db47
+2017-07-12T23:21:56.8116766+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = DOCUMENTDB, Value = true
+2017-07-12T23:21:56.8216693+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = DOCUMENTDB_ACCOUNT, Value = iot201707120034
+2017-07-12T23:21:56.8321175+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = DOCUMENTDB_COLLECTION, Value = iot201707120034
+2017-07-12T23:21:56.8381254+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = DOCUMENTDB_DATABASE, Value = iot201707120034
+2017-07-12T23:21:56.8481225+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = DOCUMENTDB_HOST, Value = https://iot201707120034.documents.azure.com:443/
+2017-07-12T23:21:56.8554006+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = EVENTHUBS, Value = true
+2017-07-12T23:21:56.8633898+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = EVENTHUBS_ENTITY_PATH, Value = iot201707120034
+2017-07-12T23:21:56.8773848+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = EVENTHUBS_FQDN_SUFFIX, Value = servicebus.windows.net
+2017-07-12T23:21:56.8863983+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = EVENTHUBS_NAMESPACE, Value = iot201707120034
+2017-07-12T23:21:56.8943970+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = EVENTHUBS_PARTITION_COUNT, Value = 2
+2017-07-12T23:21:56.9184069+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = EVENTHUBS_USERNAME, Value = root
+2017-07-12T23:21:56.9284047+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = HBASE, Value = {HBASE}
+2017-07-12T23:21:56.9354064+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = HBASE_CLUSTER_NAME, Value = hbaseiot201707120034
+2017-07-12T23:21:56.9444061+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = HBASE_CLUSTER_OS_TYPE, Value = Windows
+2017-07-12T23:21:56.9554078+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = HBASE_CLUSTER_SIZE, Value = 2
+2017-07-12T23:21:56.9644057+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = HBASE_CLUSTER_URL, Value = {HBASE_CLUSTER_URL}
+2017-07-12T23:21:56.9724029+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = HBASE_CLUSTER_USERNAME, Value = admin
+2017-07-12T23:21:56.9774073+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = KAFKA, Value = {KAFKA}
+2017-07-12T23:21:56.9859146+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = KAFKA_CLUSTER_NAME, Value = kafkaiot201707120034
+2017-07-12T23:21:56.9924204+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = KAFKA_CLUSTER_OS_TYPE, Value = Windows
+2017-07-12T23:21:56.9969164+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = KAFKA_CLUSTER_SIZE, Value = 2
+2017-07-12T23:21:57.0064274+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = KAFKA_CLUSTER_URL, Value = {KAFKA_CLUSTER_URL}
+2017-07-12T23:21:57.0154256+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = KAFKA_CLUSTER_USERNAME, Value = admin
+2017-07-12T23:21:57.0204241+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = SQLAZURE, Value = {SQLAZURE}
+2017-07-12T23:21:57.0264244+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = SQLAZURE_DB_NAME, Value = iot201707120034
+2017-07-12T23:21:57.0334243+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = SQLAZURE_SERVER_NAME, Value = iot201707120034
+2017-07-12T23:21:57.0434370+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = SQLAZURE_USER, Value = sqladmin
+2017-07-12T23:21:57.0484348+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = STORM_CLUSTER_NAME, Value = stormiot201707120034
+2017-07-12T23:21:57.0554241+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = STORM_CLUSTER_OS_TYPE, Value = Windows
+2017-07-12T23:21:57.0614266+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = STORM_CLUSTER_SIZE, Value = 2
+2017-07-12T23:21:57.0694234+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = STORM_CLUSTER_URL, Value = {STORM_CLUSTER_URL}
+2017-07-12T23:21:57.0774250+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = STORM_CLUSTER_USERNAME, Value = admin
+2017-07-12T23:21:57.0824228+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = SUBNET_NAME, Value = iot201707120034
+2017-07-12T23:21:57.0924297+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = VNET, Value = {VNET}
+2017-07-12T23:21:57.0994369+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = VNET_ID, Value = {VNET_ID}
+2017-07-12T23:21:57.1084377+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = VNET_NAME, Value = iot201707120034
+2017-07-12T23:21:57.1134439+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = VNET_VERSION, Value = Classic
+2017-07-12T23:21:57.1224381+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = WASB_ACCOUNT_NAME, Value = iot201707120034
+2017-07-12T23:21:57.1304404+08:00 [INFO] [CreateAzureResources.ps1(ln:128)] - Key = WASB_CONTAINER, Value = iot201707120034
+2017-07-12T23:21:57.1384471+08:00 [INFO] [CreateAzureResources.ps1(ln:130)] - Using subscription: Microsoft Azure Internal Consumption - ec27bf0e-5e9f-49de-a202-d79128bfd111
+2017-07-12T23:21:59.6427289+08:00 [INFO] [CreateAzureResources.ps1(ln:180)] - Step 0: Creating Azure Resource Group
+2017-07-12T23:22:00.8327378+08:00 [INFO] [CreateAzureResources.ps1(ln:203)] - Step 2: Creating storage account and updating key in configurations.properties
+2017-07-12T23:22:03.8729161+08:00 [INFO] [CreateStorageAccountARM.ps1(ln:45)] - Found an existing Storage account with same name: iot201707120034
+2017-07-12T23:22:03.8779179+08:00 [INFO] [CreateStorageAccountARM.ps1(ln:54)] - Getting Storage Key for iot201707120034
+2017-07-12T23:22:06.1292986+08:00 [INFO] [CreateStorageAccountARM.ps1(ln:59)] - Storage Account: iot201707120034 successfully created in Resource Group: iot-group-201707120034 at Location: east asia. Time: 5.2645077 secs
+2017-07-12T23:22:06.1422999+08:00 [INFO] [ReplaceStringInFile.ps1(ln:33)] - Replacing configurations in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-12T23:22:21.1620690+08:00 [INFO] [CreateAzureResources.ps1(ln:233)] - Step 2.2: Creating Event Hubs
+2017-07-12T23:22:21.6849570+08:00 [INFO] [CreateEventHubs.ps1(ln:40)] - Adding the C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\packages\WindowsAzure.ServiceBus.4.1.2\lib\net45\Microsoft.ServiceBus.dll assembly to the script...
+2017-07-12T23:22:21.8390539+08:00 [INFO] [CreateEventHubs.ps1(ln:42)] - The C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\packages\WindowsAzure.ServiceBus.4.1.2\lib\net45\Microsoft.ServiceBus.dll assembly has been successfully added to the script.
+2017-07-12T23:22:21.8530197+08:00 [INFO] [CreateEventHubs.ps1(ln:58)] - The namespace: iot201707120034 does not exist.
+2017-07-12T23:22:21.8605147+08:00 [INFO] [CreateEventHubs.ps1(ln:59)] - Creating namespace: iot201707120034 in location: east asia

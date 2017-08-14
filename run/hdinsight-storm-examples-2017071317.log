@@ -1,0 +1,25 @@
+﻿2017-07-13T17:08:11.4553071+08:00 [INFO] [CreateClusterARM.ps1(ln:125)] - 
+
+Name                      : stormiot201707120034
+Id                        : /subscriptions/ec27bf0e-5e9f-49de-a202-d79128bfd111/resourceGroups/iot-group-201707120034/providers/Microsoft.HDInsight/clusters/stormiot201707
+                            120034
+Location                  : East Asia
+ClusterVersion            : 3.2.7.1234
+OperatingSystemType       : Windows
+ClusterTier               : Standard
+ClusterState              : Running
+ClusterType               : Storm
+CoresUsed                 : 22
+HttpEndpoint              : stormiot201707120034.azurehdinsight.net
+Error                     : 
+DefaultStorageAccount     : 
+DefaultStorageContainer   : 
+DefaultStorageRootPath    : 
+ResourceGroup             : iot-group-201707120034
+AdditionalStorageAccounts : 
+ComponentVersion          : {}
+SecurityProfile           : 
+
+
+
+

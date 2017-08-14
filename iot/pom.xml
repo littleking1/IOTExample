@@ -1,0 +1,180 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.microsoft.hdinsight.storm.examples</groupId>
+  <artifactId>iot</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0</version>
+  <name>iot</name>
+  <url>http://maven.apache.org</url>
+
+  <build>
+    <plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <filters>
+              <filter>
+                  <artifact>*:*</artifact>
+                  <excludes>
+                      <exclude>META-INF/*.SF</exclude>
+                      <exclude>META-INF/*.DSA</exclude>
+                      <exclude>META-INF/*.RSA</exclude>
+                  </excludes>
+              </filter>
+          </filters>
+          <minimizeJar>false</minimizeJar>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <transformers>
+                <transformer
+                              implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                <transformer
+                              implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                  <mainClass>com.microsoft.hdinsight.storm.examples.IotTopology</mainClass>
+                  <mainClass/>
+                </transformer>
+              </transformers>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <properties>
+    <!--
+    Storm 1.1.0 is for HDInsight 3.6.
+    To find the version information for earlier HDInsight cluster
+    versions, see https://azure.microsoft.com/en-us/documentation/articles/hdinsight-component-versioning/
+    -->
+    <storm.version>1.1.0</storm.version>
+    <hadoop.version>2.7.3</hadoop.version>
+    <storm.eventhub.version>1.1.0.1</storm.eventhub.version>
+  </properties>
+  <dependencies>  
+    <!-- dependencies for wasb bolt -->
+    <dependency>
+      <groupId>org.apache.storm</groupId>
+      <artifactId>storm-hdfs</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.hadoop</groupId>
+          <artifactId>hadoop-client</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.apache.hadoop</groupId>
+          <artifactId>hadoop-hdfs</artifactId>
+        </exclusion>
+      </exclusions>
+      <version>${storm.version}</version>
+    </dependency>
+    <!--
+    This is a temporary workaround to make HdfsBolt work with WASB through hadoop-azure project.
+    For now, we have to build hadoop-client, hadoop-hdfs and hadoop-azure from Hadoop trunk
+    (which defaults to 3.0.0-SNAPSHOT version). And push those jars and dependencies to local
+    mvn repo (take a look at push_lib_mvn.ps1).
+    
+    Once Hadoop 2.7 is released, we can just switch to that version.
+    Note that hadoop-azure is added to Hadoop on Hadoop 2.7.
+    -->
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-client</artifactId>
+      <version>2.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-hdfs</artifactId>
+      <version>2.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-azure</artifactId>
+      <version>2.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.hadoop</groupId>
+      <artifactId>hadoop-common</artifactId>
+      <version>2.8.1</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-log4j12</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.windowsazure.storage</groupId>
+      <artifactId>microsoft-windowsazure-storage-sdk</artifactId>
+      <version>${storm.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.storm</groupId>
+      <artifactId>storm-core</artifactId>
+      <version>${storm.version}</version>
+      <!-- keep storm out of the jar-with-dependencies -->
+      <scope>provided</scope>
+    </dependency>
+    <!-- Flux, for YAML based topologies -->
+    <dependency>
+      <groupId>org.apache.storm</groupId>
+      <artifactId>storm-hdfs</artifactId>
+      <version>${storm.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.storm</groupId>
+      <artifactId>flux-core</artifactId>
+      <version>${storm.version}</version>
+    </dependency>
+    <!--For working with Event Hubs-->
+    <dependency>
+      <groupId>org.apache.storm</groupId>
+      <artifactId>storm-eventhubs</artifactId>
+      <version>${storm.version}</version>
+    </dependency>
+        <!-- dependencies for data reference bolt -->
+    <dependency>
+      <groupId>com.microsoft.azure</groupId> 
+      <artifactId>azure-documentdb</artifactId> 
+      <version>1.10.0</version> 
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>16.0.1</version>
+    </dependency>
+    <!-- dependencies for type conversion bolt -->
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20170516</version>
+    </dependency>
+    <dependency>
+      <groupId>jdk.tools</groupId>
+      <artifactId>jdk.tools</artifactId>
+      <version>1.8</version>
+    </dependency>
+  </dependencies>
+</project>

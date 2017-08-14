@@ -1,0 +1,54 @@
+﻿2017-07-13T21:45:47.2358134+08:00 [INFO] [ReplaceStringInFile.ps1(ln:33)] - Replacing configurations in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-13T21:45:47.2668169+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating STORM_CLUSTER_URL with value: https://stormiot201707120034.azurehdinsight.net
+2017-07-13T21:45:47.2878166+08:00 [INFO] [CreateAzureResources.ps1(ln:328)] - Azure resources created, completed in 19302.1700101 seconds.
+2017-07-13T21:45:47.3338312+08:00 [INFO] [ReadConfig.ps1(ln:26)] - Reading configurations from C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
+2017-07-13T21:45:47.3758345+08:00 [INFO] [ReplaceStringInFile.ps1(ln:33)] - Replacing configurations in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\docdb.config
+2017-07-13T21:45:47.3958385+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating DOCUMENTDB_HOST with value: https://iot201707120034.documents.azure.com:443/
+2017-07-13T21:45:47.4113470+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating DOCUMENTDB_DATABASE with value: iot201707120034
+2017-07-13T21:45:47.4233534+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating DOCUMENTDB_KEY with value: 0jWFQxsYbNplqmSeOCRJdHEHPnJlcddkIncYvEmDuvdWJlDq64LwcaM9KegzZWeJ9NZG0T7Wb9SKYt5KNp8YMw==
+2017-07-13T21:45:47.4373477+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating DOCUMENTDB_COLLECTION with value: iot201707120034
+2017-07-13T21:45:47.4703490+08:00 [INFO] [ReplaceStringInFile.ps1(ln:33)] - Replacing configurations in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\eventhubs.config
+2017-07-13T21:45:47.4868494+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating EVENTHUBS_PARTITION_COUNT with value: 2
+2017-07-13T21:45:47.4978514+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating EVENTHUBS_FQDN_SUFFIX with value: servicebus.windows.net
+2017-07-13T21:45:47.5053513+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating EVENTHUBS_ENTITY_PATH with value: iot201707120034
+2017-07-13T21:45:47.5158537+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating EVENTHUBS_USERNAME with value: root
+2017-07-13T21:45:47.5258539+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating EVENTHUBS_PASSWORD with value: {EVENTHUBS_PASSWORD}
+2017-07-13T21:45:47.5338552+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating EVENTHUBS_NAMESPACE with value: iot201707120034
+2017-07-13T21:45:47.5593541+08:00 [INFO] [ReplaceStringInFile.ps1(ln:33)] - Replacing configurations in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\iot\src\main\resources\myconfig.properties
+2017-07-13T21:45:47.5878551+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating EVENTHUBS_PARTITION_COUNT with value: 2
+2017-07-13T21:45:47.5988560+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating EVENTHUBS_FQDN_SUFFIX with value: servicebus.windows.net
+2017-07-13T21:45:47.6083566+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating EVENTHUBS_ENTITY_PATH with value: iot201707120034
+2017-07-13T21:45:47.6168590+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating DOCUMENTDB_HOST with value: https://iot201707120034.documents.azure.com:443/
+2017-07-13T21:45:47.6248814+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating DOCUMENTDB_DATABASE with value: iot201707120034
+2017-07-13T21:45:47.6348616+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating DOCUMENTDB_KEY with value: 0jWFQxsYbNplqmSeOCRJdHEHPnJlcddkIncYvEmDuvdWJlDq64LwcaM9KegzZWeJ9NZG0T7Wb9SKYt5KNp8YMw==
+2017-07-13T21:45:47.6428589+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating EVENTHUBS_USERNAME with value: root
+2017-07-13T21:45:47.6553602+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating EVENTHUBS_PASSWORD with value: {EVENTHUBS_PASSWORD}
+2017-07-13T21:45:47.6638622+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating DOCUMENTDB_COLLECTION with value: iot201707120034
+2017-07-13T21:45:47.6738595+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating EVENTHUBS_NAMESPACE with value: iot201707120034
+2017-07-13T21:45:47.8239139+08:00 [INFO] [ReplaceStringInFile.ps1(ln:33)] - Replacing configurations in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\iot\src\main\resources\core-site.xml
+2017-07-13T21:45:47.8429140+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating WASB_ACCOUNT_NAME with value: iot201707120034
+2017-07-13T21:45:47.8509157+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating WASB_CONTAINER with value: iot201707120034
+2017-07-13T21:45:47.8599195+08:00 [INFO] [ReplaceStringInFile.ps1(ln:46)] - Updating WASB_ACCOUNT_KEY with value: CjWkK06hzmmz0jEluYTpX3HTyzy5nOsbXmNbw4gjA+KIlS09E+WWa/EWeuKD3dwvs/kYWuYqCHpxiIKXGf9G0Q==
+2017-07-13T21:45:47.8839417+08:00 [INFO] [run.ps1(ln:45)] - Phase 1 - Preparation - End - Preparation complete for C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample.
+2017-07-13T21:45:47.8919478+08:00 [INFO] [run.ps1(ln:50)] - Phase 2 - Build - Start - Building C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample
+2017-07-13T21:45:48.6260809+08:00 [INFO] [buildJava.ps1(ln:22)] - Found JAVA_HOME environment variable with value: 'C:\Program Files\Java\jdk1.8.0_131'
+2017-07-13T21:45:48.8441619+08:00 [ERROR] [getMavenTools.ps1(ln:25)] - M2_HOME not found. Downloading Maven tools.
+2017-07-13T21:45:48.8531618+08:00 [INFO] [getMavenTools.ps1(ln:31)] - Downloading Maven from http://www.us.apache.org/dist/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.zip to C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\scripts\build\..\..\tools\maven-bin.zip
+2017-07-13T21:45:48.8731790+08:00 [INFO] [installMvnLib.ps1(ln:24)] - Pushing MVN libs
+2017-07-13T21:46:08.4689037+08:00 [INFO] [buildJava.ps1(ln:41)] - Building Java Projects
+2017-07-13T21:46:08.4759039+08:00 [INFO] [buildJava.ps1(ln:42)] - ======================
+2017-07-13T21:46:08.5029170+08:00 [INFO] [buildJava.ps1(ln:44)] - Building Java Project: C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\docdbgen
+2017-07-13T21:46:20.3620356+08:00 [INFO] [buildJava.ps1(ln:44)] - Building Java Project: C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\eventgen
+2017-07-13T21:46:29.4881244+08:00 [INFO] [buildJava.ps1(ln:44)] - Building Java Project: C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\iot
+2017-07-13T21:46:50.2048810+08:00 [INFO] [buildJava.ps1(ln:63)] - Project building complete!
+
+2017-07-13T21:46:50.2153878+08:00 [INFO] [buildJava.ps1(ln:64)] - Build Summary:
+2017-07-13T21:46:50.2233869+08:00 [INFO] [buildJava.ps1(ln:65)] - ======================
+2017-07-13T21:46:50.2353904+08:00 [INFO] [buildJava.ps1(ln:77)] - SUCCESS: All projects built successfully!
+2017-07-13T21:46:50.2513898+08:00 [INFO] [buildJava.ps1(ln:78)] - C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\docdbgen\pom.xml
+2017-07-13T21:46:50.2583984+08:00 [INFO] [buildJava.ps1(ln:78)] - C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\eventgen\pom.xml
+2017-07-13T21:46:50.2673931+08:00 [INFO] [buildJava.ps1(ln:78)] - C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\iot\pom.xml
+2017-07-13T21:46:50.3214156+08:00 [INFO] [build.ps1(ln:23)] - Build Complete for 'C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample!'
+2017-07-13T21:46:50.3304158+08:00 [INFO] [run.ps1(ln:65)] - Build complete for C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample
+2017-07-13T21:46:50.3354157+08:00 [INFO] [run.ps1(ln:70)] - Phase 3 - Execute - Start - Executing the example in C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample
+2017-07-13T21:46:50.3874163+08:00 [INFO] [ReadConfig.ps1(ln:26)] - Reading configurations from C:\Users\fuyujin\Source\Repos\hdinsight-storm-examples\IotExample\run\configurations.properties
