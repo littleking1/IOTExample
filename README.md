@@ -1,4 +1,8 @@
 # Internet of Things example
+
+Follow the steps in the referece below to test the IOT example, clone the whole project from the github template mentioned , but replace the IOTExample folder with the content in this branch. 
+https://github.com/hdinsight/hdinsight-storm-examples
+
 This is an example for IOT (Internet of Things) scenario using Storm under ARM model. The basic idea is to showcase how to use Storm topology to read messages from Azure EventHubs, read document from Azure DocumentDB for data referencing and save data to Azure Storage.
 
 For this example to work end to end, along with the Storm topology (iot), following tools have been provided:
