@@ -1,5 +1,5 @@
 # Internet of Things example
-This is an example for IOT (Internet of Things) scenario using Storm. The basic idea is to showcase how to use Storm topology to read messages from Azure EventHubs, read document from Azure DocumentDB for data referencing and save data to Azure Storage.
+This is an example for IOT (Internet of Things) scenario using Storm under ARM model. The basic idea is to showcase how to use Storm topology to read messages from Azure EventHubs, read document from Azure DocumentDB for data referencing and save data to Azure Storage.
 
 For this example to work end to end, along with the Storm topology (iot), following tools have been provided:
 
@@ -36,10 +36,17 @@ Use ```IoTExample\build.bat``` to build the example.
 Use ```IoTExample\run.bat``` to run the example that will create resources in Azure, build and submit the example topology.
 
 ```IMPORTANT NOTES:```
+The original version of example provided in the technet has many compiling errors, I have fixed them all and composed a version for the latest HDInsight 3.6 and ARM Model, thus you can download and compile directly under Eclipse. To test it , please make sure you have all reprequisites succcessfully prepared. 
+
 * During the process, you will be prompted to login with your Azure credentials and type your subscription name.
 * This will first create all dependencies (DocumentDB, EventHubs, Storage) in Azure, then update configuration files, then build all 3 projects.
 * This script will open a browser window for the external Storm UI, you need to enter Storm cluster credentials, they are stored at config\configurations.properties
 * In the case of failure in creating resources in Azure, you can run ```IoTExample\cleanup.bat``` which will delete resources that have been created.
+** As the latest HDInsight does not support windows anymore starting from 3.5, you can only input Linux for HDinsight OS type, and the final toplogy can not be uploaded to Storm automatically, you might want to manually follow the steps talking here to upload the toplogy and submit it. 
+Using Winscp to upload the topology if you are developing on VS 2017 under Windows:
+
+    ~/target/iot-1.0.jar USERNAME@CLUSTERNAME-ssh.azurehdinsight.net:.
+    storm jar ~/iot-1.0.jar "com.microsoft.hdinsight.storm.examples.IotTopology"  "IotTopology"
 
 ## How to clean and delete all resources in Azure and local build artifacts ###
 Use ```IoTExample\cleanup.bat``` to delete the resources created from previous step and also any local build generated artifacts.
