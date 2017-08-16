@@ -46,7 +46,7 @@ The original version of example provided in the technet has many compiling error
 * This will first create all dependencies (DocumentDB, EventHubs, Storage) in Azure, then update configuration files, then build all 3 projects.
 * This script will open a browser window for the external Storm UI, you need to enter Storm cluster credentials, they are stored at config\configurations.properties
 * In the case of failure in creating resources in Azure, you can run ```IoTExample\cleanup.bat``` which will delete resources that have been created.
-** As the latest HDInsight does not support windows anymore starting from 3.5, you can only input Linux for HDinsight OS type, and the final toplogy can not be uploaded to Storm automatically, you might want to manually follow the steps talking here to upload the toplogy and submit it. 
+* As the latest HDInsight does not support windows anymore starting from 3.5, you can only input Linux for HDinsight OS type, and the final toplogy can not be uploaded to Storm automatically, you might want to manually follow the steps talking here to upload the toplogy and submit it. 
 Using Winscp to upload the topology if you are developing on VS 2017 under Windows:
 
     ~/target/iot-1.0.jar USERNAME@CLUSTERNAME-ssh.azurehdinsight.net:.
